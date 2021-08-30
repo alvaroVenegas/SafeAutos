@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<form method="POST" class="form">
+    <div>
+    <p>Introduce tu alias: {{app.user.alias}}</p>
+    <input type="text" name="inputAlias" class="form-control form"/>
+    </div>
+    <div class="form__button">
+    <button type="submit" class="btn btn-danger">Borrar</button>
+    <a href="{{path('getVehicles')}}" class="btn btn-primary form__button--item">Volver</a>
+    </div>
+</form>
+
+{% endblock %}

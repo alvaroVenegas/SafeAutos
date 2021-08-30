@@ -1,0 +1,39 @@
+{% extends "base.html.twig" %}
+
+
+
+{% block body %}
+    
+    <h1>detalle vehiculo</h1>
+    
+    <form method="POST">
+        <div  class="form">
+            <label for="mark">Marca</label>
+            <input class="form__input" type="text" name="mark" value={{vehicle.mark}}>
+            <label for="model">Modelo</label>
+            <input class="form__input" type="text" name="model" value={{vehicle.model}}>
+            <label for="Identification">Identificacion</label>
+            <input class="form__input" type="text" name="identification" value={{vehicle.identification}}>
+            <label for="kms">Kilometros</label>
+            <input class="form__input" type="number" name="kms" value={{vehicle.kms}}>
+            <label for="dateITV">Fecha ITV</label>
+            <input class="form__input" type="text" name="dateITV" value={{vehicle.dateITV | date ('d/m/y')}}>
+            <label for="image">Imagen</label>
+            <img class="form__img" src="{{vehicle.image}}"/>
+            <input class="form__input" type="text" name="image" placeholder="Cambiar Imagen" >
+            
+        </div>
+        
+        <div>
+            <a href="{{path('getVehicles')}}" class="btn btn-primary">Volver</a>
+            <button type="submit">Guardar</button>
+        </div>
+
+    
+
+    <p>{{vehicle.idUser.alias}}</p>
+   
+  
+  
+  
+  {% endblock %}

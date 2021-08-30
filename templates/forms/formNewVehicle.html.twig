@@ -1,0 +1,34 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+
+    {{ form_start(vehicleForm) }}
+
+    <div class="form">
+        {{ form_widget(vehicleForm) }}
+        
+        <div class="form__button">    
+
+        {% if vehicle is defined %}
+        <a href="{{path('deleteVehicle',{id:vehicle.id})}}" class="btn btn-danger form__button--item">Borrar</a>
+        {% endif %}
+
+        <a href="{{path('getVehicles')}}" class="btn btn-primary form__button--item">Volver</a>
+        {% if flag == true %}
+            <button type="submit" class="btn btn-primary form__button--item">Añadir</button>
+        {% endif %}
+        {% if flag == false %}
+            <button type="submit" class="btn btn-primary form__button--item">Modificar</button>
+        {% endif %}
+    </div>
+
+    </div>
+
+   
+        
+      
+           
+    {{ form_end(vehicleForm) }}
+
+{% endblock %}

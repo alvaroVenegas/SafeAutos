@@ -1,0 +1,139 @@
+body{
+    background-color:#09C2EB;
+    
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 600px;
+    margin:20px;
+
+}
+.form__title{
+    margin-left: 20px;
+}
+
+.form__button{
+    flex-direction: row;
+    margin-right:20px;
+    color:white;
+}
+.form__button--item{
+    
+    margin-right:20px;
+    
+}
+
+.registerForm{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 600px;
+    margin:20px;
+}
+
+.registerForm__title{
+    margin-left: 20px;
+}
+
+.detailsForm{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 600px;
+    margin:20px;
+}
+
+.detailsForm__button{
+    flex-direction: row;
+    margin-right:20px;
+    color:white;
+}
+
+.detailsForm__button--item{
+    
+    margin-right:20px;
+    
+}
+
+
+
+.loginForm{
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    flex-direction:column;
+    max-width:300px;
+}
+
+.header--img{
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+.cardContainer{
+    display:flex;
+    
+    
+}
+.cardContainer__ul{
+    
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-height: 700px;
+    min-height: 400px;
+    height: 100%;
+    max-width: 300px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.cardContainer__li{
+    padding: 5px 10px;
+}
+
+.cardContainer__li--img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.cardContainer__plus{
+   
+    font-size: 100px;
+  
+
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color:inherit;
+
+}
+ul{
+    list-style:none;
+    
+}
